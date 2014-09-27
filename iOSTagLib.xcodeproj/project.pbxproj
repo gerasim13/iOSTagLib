@@ -18,7 +18,7 @@
 		0063682519D4B61500AC7908 /* asfproperties.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0063674019D4B61500AC7908 /* asfproperties.cpp */; };
 		0063682619D4B61500AC7908 /* asftag.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0063674219D4B61500AC7908 /* asftag.cpp */; };
 		0063682719D4B61500AC7908 /* audioproperties.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0063674419D4B61500AC7908 /* audioproperties.cpp */; };
-		0063682819D4B61500AC7908 /* fileref.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0063674719D4B61500AC7908 /* fileref.cpp */; };
+		0063682819D4B61500AC7908 /* fileref.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0063674719D4B61500AC7908 /* fileref.cpp */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-checker"; }; };
 		0063682919D4B61500AC7908 /* flacfile.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0063674A19D4B61500AC7908 /* flacfile.cpp */; };
 		0063682A19D4B61500AC7908 /* flacmetadatablock.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0063674C19D4B61500AC7908 /* flacmetadatablock.cpp */; };
 		0063682B19D4B61500AC7908 /* flacpicture.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0063674E19D4B61500AC7908 /* flacpicture.cpp */; };
@@ -312,7 +312,7 @@
 		006367FC19D4B61500AC7908 /* tiostream.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = tiostream.cpp; sourceTree = "<group>"; };
 		006367FD19D4B61500AC7908 /* tiostream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tiostream.h; sourceTree = "<group>"; };
 		006367FE19D4B61500AC7908 /* tlist.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tlist.h; sourceTree = "<group>"; };
-		006367FF19D4B61500AC7908 /* tlist.tcc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = tlist.tcc; sourceTree = "<group>"; };
+		006367FF19D4B61500AC7908 /* tlist.tcc */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp.preprocessed; fileEncoding = 4; path = tlist.tcc; sourceTree = "<group>"; };
 		0063680019D4B61500AC7908 /* tmap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tmap.h; sourceTree = "<group>"; };
 		0063680119D4B61500AC7908 /* tmap.tcc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = tmap.tcc; sourceTree = "<group>"; };
 		0063680219D4B61500AC7908 /* tpropertymap.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = tpropertymap.cpp; sourceTree = "<group>"; };
@@ -1005,8 +1005,9 @@
 					"$(inherited)",
 				);
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = NO;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_NON_VIRTUAL_DESTRUCTOR = NO;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
@@ -1044,8 +1045,9 @@
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = NO;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_NON_VIRTUAL_DESTRUCTOR = NO;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
