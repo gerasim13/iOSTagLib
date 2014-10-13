@@ -108,7 +108,7 @@
 		0063688119D4B61500AC7908 /* xmfile.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0063681819D4B61500AC7908 /* xmfile.cpp */; };
 		0063688219D4B61500AC7908 /* xmproperties.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0063681A19D4B61500AC7908 /* xmproperties.cpp */; };
 		0063688819D4B88E00AC7908 /* tag_c.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0063688319D4B65800AC7908 /* tag_c.cpp */; };
-		0063688A19D4B97500AC7908 /* tag_c.h in Headers */ = {isa = PBXBuildFile; fileRef = 0063688419D4B65800AC7908 /* tag_c.h */; };
+		0063688A19D4B97500AC7908 /* tag_c.h in Headers */ = {isa = PBXBuildFile; fileRef = 0063688419D4B65800AC7908 /* tag_c.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -1020,6 +1020,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				PUBLIC_HEADERS_FOLDER_PATH = "include/$(PRODUCT_NAME)";
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -1059,6 +1060,7 @@
 				);
 				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				PUBLIC_HEADERS_FOLDER_PATH = "include/$(PRODUCT_NAME)";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
