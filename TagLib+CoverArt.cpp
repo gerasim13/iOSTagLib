@@ -45,7 +45,7 @@ Boolean get_attached_picture_frame(TagLib::ID3v2::Tag *tag, TagLib::ID3v2::Attac
 
 //_______________________________________________________________________________________________________________
 
-Boolean CopyCoverArtDataForFileAtPath(CFStringRef path, CFDataRef *data)
+Boolean CopyCoverArtDataFromFileAtPath(CFStringRef path, CFDataRef *data)
 {
     // Open file
     const char *cString = CFStringGetCStringPtr(path, kCFStringEncodingUTF8);
@@ -68,7 +68,7 @@ Boolean CopyCoverArtDataForFileAtPath(CFStringRef path, CFDataRef *data)
     return FALSE;
 }
 
-Boolean SetCoverArtDataForFileAtPath(CFStringRef path, CFDataRef data)
+Boolean SetCoverArtDataToFileAtPath(CFStringRef path, CFDataRef data)
 {
     // Open file
     const char *cString = CFStringGetCStringPtr(path, kCFStringEncodingUTF8);

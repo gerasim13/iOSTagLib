@@ -21,8 +21,8 @@ CF_EXTERN_C_BEGIN
 
 //_______________________________________________________________________________________________________________
 
-Boolean CopyCoverArtDataForFileAtPath(CFStringRef path, CFDataRef *data);
-Boolean SetCoverArtDataForFileAtPath (CFStringRef path, CFDataRef  data);
+Boolean CopyCoverArtDataFromFileAtPath(CFStringRef path, CFDataRef *data);
+Boolean SetCoverArtDataToFileAtPath (CFStringRef path, CFDataRef  data);
 
 //_______________________________________________________________________________________________________________
 
