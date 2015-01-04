@@ -18,7 +18,7 @@
 		0063682519D4B61500AC7908 /* asfproperties.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0063674019D4B61500AC7908 /* asfproperties.cpp */; };
 		0063682619D4B61500AC7908 /* asftag.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0063674219D4B61500AC7908 /* asftag.cpp */; };
 		0063682719D4B61500AC7908 /* audioproperties.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0063674419D4B61500AC7908 /* audioproperties.cpp */; };
-		0063682819D4B61500AC7908 /* fileref.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0063674719D4B61500AC7908 /* fileref.cpp */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-checker"; }; };
+		0063682819D4B61500AC7908 /* fileref.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0063674719D4B61500AC7908 /* fileref.cpp */; settings = {COMPILER_FLAGS = "-w"; }; };
 		0063682919D4B61500AC7908 /* flacfile.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0063674A19D4B61500AC7908 /* flacfile.cpp */; };
 		0063682A19D4B61500AC7908 /* flacmetadatablock.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0063674C19D4B61500AC7908 /* flacmetadatablock.cpp */; };
 		0063682B19D4B61500AC7908 /* flacpicture.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0063674E19D4B61500AC7908 /* flacpicture.cpp */; };
