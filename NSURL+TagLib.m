@@ -117,7 +117,7 @@ exit:
 - (void)setArtwork:(UIImage*)artwork
 {
     CFStringRef _path = (__bridge CFStringRef)(self.path);
-    CFDataRef   _data = (__bridge CFDataRef)(UIImageJPEGRepresentation(artwork, 0.7));
+    CFDataRef   _data = (__bridge CFDataRef)(UIImageJPEGRepresentation(artwork, 1.0));
     // Set artwork
     if (!SetCoverArtDataToFileAtPath(_path, _data))
     {
