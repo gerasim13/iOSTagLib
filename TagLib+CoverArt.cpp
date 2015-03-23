@@ -77,7 +77,7 @@ Boolean SetCoverArtDataToFileAtPath(CFStringRef path, CFDataRef data)
     TagLib::ID3v2::Tag *tag = audioFile.tag();
     TagLib::ID3v2::AttachedPictureFrame *frame;
     // Set data
-    if (tag != NULL)
+    if (tag != NULL && data != NULL)
     {
         const UInt8 *bytes = CFDataGetBytePtr(data);
         TagLib::ByteVector imageData((const char *)bytes, (uint)CFDataGetLength(data));
