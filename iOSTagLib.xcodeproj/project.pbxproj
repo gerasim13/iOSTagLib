@@ -30,7 +30,7 @@
 		0046E8001CA7295A00C48C8C /* asfutils.h in Headers */ = {isa = PBXBuildFile; fileRef = 0046E70D1CA7295900C48C8C /* asfutils.h */; };
 		0046E8011CA7295A00C48C8C /* audioproperties.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0046E70E1CA7295900C48C8C /* audioproperties.cpp */; };
 		0046E8021CA7295A00C48C8C /* audioproperties.h in Headers */ = {isa = PBXBuildFile; fileRef = 0046E70F1CA7295900C48C8C /* audioproperties.h */; };
-		0046E8031CA7295A00C48C8C /* fileref.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0046E7101CA7295900C48C8C /* fileref.cpp */; };
+		0046E8031CA7295A00C48C8C /* fileref.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0046E7101CA7295900C48C8C /* fileref.cpp */; settings = {COMPILER_FLAGS = "-Wno-delete-non-virtual-dtor"; }; };
 		0046E8041CA7295A00C48C8C /* fileref.h in Headers */ = {isa = PBXBuildFile; fileRef = 0046E7111CA7295900C48C8C /* fileref.h */; };
 		0046E8051CA7295A00C48C8C /* flacfile.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0046E7131CA7295900C48C8C /* flacfile.cpp */; };
 		0046E8061CA7295A00C48C8C /* flacfile.h in Headers */ = {isa = PBXBuildFile; fileRef = 0046E7141CA7295900C48C8C /* flacfile.h */; };
@@ -1133,7 +1133,6 @@
 				0046E81C1CA7295A00C48C8C /* mp4atom.cpp in Sources */,
 				0046E8B51CA7295A00C48C8C /* tzlib.cpp in Sources */,
 				0046E85E1CA7295A00C48C8C /* id3v2tag.cpp in Sources */,
-				0046E8031CA7295A00C48C8C /* fileref.cpp in Sources */,
 				0046E8B91CA7295A00C48C8C /* trueaudiofile.cpp in Sources */,
 				0046E8201CA7295A00C48C8C /* mp4file.cpp in Sources */,
 				0046E8771CA7295A00C48C8C /* speexproperties.cpp in Sources */,
@@ -1206,6 +1205,7 @@
 				0046E86D1CA7295A00C48C8C /* oggpage.cpp in Sources */,
 				0046E8A61CA7295A00C48C8C /* tiostream.cpp in Sources */,
 				0046E81A1CA7295A00C48C8C /* modtag.cpp in Sources */,
+				0046E8031CA7295A00C48C8C /* fileref.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1304,6 +1304,7 @@
 		006366FD19D4B3E700AC7908 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				OTHER_CFLAGS = "";
 				OTHER_LDFLAGS = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -1319,6 +1320,7 @@
 					NS_BLOCK_ASSERTIONS,
 				);
 				LLVM_LTO = YES;
+				OTHER_CFLAGS = "";
 				OTHER_LDFLAGS = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
