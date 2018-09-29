@@ -18,6 +18,7 @@
 @dynamic artwork;
 @dynamic artistName;
 @dynamic trackTitle;
+@dynamic trackLength;
 
 //_______________________________________________________________________________________________________________
 
@@ -80,6 +81,24 @@ exit:
     }
     // Return image
     return _img;
+}
+
+- (NSUInteger)trackLength
+{
+    TagLib_File *file = taglib_file_new([self.path UTF8String]);
+    NSUInteger   length = 0;
+    // Check opened file
+    if (file && taglib_file_is_valid(file))
+    {
+        const TagLib_AudioProperties *props = taglib_file_audioproperties(file);
+        if (props)
+        {
+            length = taglib_audioproperties_length(props);
+        }
+    }
+    // Close file
+    taglib_file_free(file);
+    return length;
 }
 
 //_______________________________________________________________________________________________________________
