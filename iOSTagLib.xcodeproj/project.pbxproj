@@ -208,8 +208,6 @@
 		0046E8B41CA7295A00C48C8C /* tutils.h in Headers */ = {isa = PBXBuildFile; fileRef = 0046E7D81CA7295A00C48C8C /* tutils.h */; };
 		0046E8B51CA7295A00C48C8C /* tzlib.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0046E7D91CA7295A00C48C8C /* tzlib.cpp */; };
 		0046E8B61CA7295A00C48C8C /* tzlib.h in Headers */ = {isa = PBXBuildFile; fileRef = 0046E7DA1CA7295A00C48C8C /* tzlib.h */; };
-		0046E8B71CA7295A00C48C8C /* unicode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0046E7DB1CA7295A00C48C8C /* unicode.cpp */; };
-		0046E8B81CA7295A00C48C8C /* unicode.h in Headers */ = {isa = PBXBuildFile; fileRef = 0046E7DC1CA7295A00C48C8C /* unicode.h */; };
 		0046E8B91CA7295A00C48C8C /* trueaudiofile.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0046E7DE1CA7295A00C48C8C /* trueaudiofile.cpp */; };
 		0046E8BA1CA7295A00C48C8C /* trueaudiofile.h in Headers */ = {isa = PBXBuildFile; fileRef = 0046E7DF1CA7295A00C48C8C /* trueaudiofile.h */; };
 		0046E8BB1CA7295A00C48C8C /* trueaudioproperties.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0046E7E01CA7295A00C48C8C /* trueaudioproperties.cpp */; };
@@ -224,6 +222,8 @@
 		0046E8C41CA7295A00C48C8C /* xmproperties.h in Headers */ = {isa = PBXBuildFile; fileRef = 0046E7EB1CA7295A00C48C8C /* xmproperties.h */; };
 		0063688819D4B88E00AC7908 /* tag_c.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0063688319D4B65800AC7908 /* tag_c.cpp */; };
 		0063688A19D4B97500AC7908 /* tag_c.h in Headers */ = {isa = PBXBuildFile; fileRef = 0063688419D4B65800AC7908 /* tag_c.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BC4FD91A21D68EDA00C37AB1 /* core.h in Headers */ = {isa = PBXBuildFile; fileRef = BC4FD91821D68EBB00C37AB1 /* core.h */; };
+		BC4FD91B21D68EDA00C37AB1 /* checked.h in Headers */ = {isa = PBXBuildFile; fileRef = BC4FD91921D68EBB00C37AB1 /* checked.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -458,6 +458,8 @@
 		0063688319D4B65800AC7908 /* tag_c.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = tag_c.cpp; sourceTree = "<group>"; };
 		0063688419D4B65800AC7908 /* tag_c.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tag_c.h; sourceTree = "<group>"; };
 		0063688719D4B70500AC7908 /* taglib_config.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = taglib_config.h; sourceTree = SOURCE_ROOT; };
+		BC4FD91821D68EBB00C37AB1 /* core.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = core.h; sourceTree = "<group>"; };
+		BC4FD91921D68EBB00C37AB1 /* checked.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = checked.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -872,6 +874,7 @@
 			isa = PBXGroup;
 			children = (
 				0063688719D4B70500AC7908 /* taglib_config.h */,
+				BC4FD91621D68EBB00C37AB1 /* 3rdparty */,
 				0063672519D4B61500AC7908 /* tag_c */,
 				0063672C19D4B61500AC7908 /* tag */,
 			);
@@ -922,6 +925,24 @@
 			path = taglib/taglib;
 			sourceTree = SOURCE_ROOT;
 		};
+		BC4FD91621D68EBB00C37AB1 /* 3rdparty */ = {
+			isa = PBXGroup;
+			children = (
+				BC4FD91721D68EBB00C37AB1 /* utf8-cpp */,
+			);
+			name = 3rdparty;
+			path = taglib/3rdparty;
+			sourceTree = "<group>";
+		};
+		BC4FD91721D68EBB00C37AB1 /* utf8-cpp */ = {
+			isa = PBXGroup;
+			children = (
+				BC4FD91821D68EBB00C37AB1 /* core.h */,
+				BC4FD91921D68EBB00C37AB1 /* checked.h */,
+			);
+			path = "utf8-cpp";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -930,6 +951,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				0046E7F51CA7295A00C48C8C /* apetag.h in Headers */,
+				BC4FD91A21D68EDA00C37AB1 /* core.h in Headers */,
+				BC4FD91B21D68EDA00C37AB1 /* checked.h in Headers */,
 				0046E8531CA7295A00C48C8C /* id3v2extendedheader.h in Headers */,
 				0046E88B1CA7295A00C48C8C /* wavproperties.h in Headers */,
 				0046E8A81CA7295A00C48C8C /* tlist.h in Headers */,
@@ -970,7 +993,6 @@
 				0046E87C1CA7295A00C48C8C /* vorbisproperties.h in Headers */,
 				0046E7FF1CA7295A00C48C8C /* asftag.h in Headers */,
 				0046E8741CA7295A00C48C8C /* opusproperties.h in Headers */,
-				0046E8B81CA7295A00C48C8C /* unicode.h in Headers */,
 				0046E82B1CA7295A00C48C8C /* mpcproperties.h in Headers */,
 				0046E82F1CA7295A00C48C8C /* id3v1tag.h in Headers */,
 				0046E8431CA7295A00C48C8C /* relativevolumeframe.h in Headers */,
@@ -1123,7 +1145,6 @@
 				0046E8691CA7295A00C48C8C /* oggflacfile.cpp in Sources */,
 				0046E8441CA7295A00C48C8C /* synchronizedlyricsframe.cpp in Sources */,
 				0046E8901CA7295A00C48C8C /* tag.cpp in Sources */,
-				0046E8B71CA7295A00C48C8C /* unicode.cpp in Sources */,
 				0046E89C1CA7295A00C48C8C /* tbytevectorstream.cpp in Sources */,
 				0046E88C1CA7295A00C48C8C /* s3mfile.cpp in Sources */,
 				0046E8881CA7295A00C48C8C /* wavfile.cpp in Sources */,
@@ -1261,6 +1282,7 @@
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"$(SRCROOT)/taglib/3rdparty",
 					"$(SRCROOT)/taglib/taglib/**",
 				);
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
@@ -1313,6 +1335,7 @@
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"$(SRCROOT)/taglib/3rdparty",
 					"$(SRCROOT)/taglib/taglib/**",
 				);
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
