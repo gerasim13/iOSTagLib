@@ -1,0 +1,6 @@
+framework module iOSTagLib {
+  umbrella header "iOSTagLib-umbrella.h"
+
+  export *
+  module * { export * }
+}
