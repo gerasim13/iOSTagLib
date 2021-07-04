@@ -29,7 +29,7 @@ Pod::Spec.new do |s|
     # 'ALWAYS_SEARCH_USER_PATHS' => 'NO',
     'CLANG_CXX_LANGUAGE_STANDARD' => 'c++14',
     'CLANG_CXX_LIBRARY' => 'libc++',
-    'OTHER_LINK_FLAG' => '$(inherited) -ObjC -lc++',
+    # 'OTHER_LINK_FLAG' => '$(inherited) -ObjC -lc++',
     'USER_HEADER_SEARCH_PATHS' => [
       '$(inherited)',
       '$(PODS_ROOT)/iOSTagLib/**',
